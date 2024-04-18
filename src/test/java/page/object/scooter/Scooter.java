@@ -1,4 +1,4 @@
-package PageObjectScooterAndQuestion;
+package page.object.scooter;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -110,7 +110,7 @@ public class Scooter {
         return element.getText();
     }
 
-    public void FillingOutTheFormRental(String date, String comment){
+    public void fillingOutTheFormRental(String date, String comment){
         driver.findElement(locatorByOpenCalendarOfDeliveryScooter).sendKeys(date);
         clickCalendarBlueBackgroundRental();
         driver.findElement(locatorByOpenFieldPeriodRenalScooter).click();
