@@ -2,7 +2,7 @@ package test;
 
 import org.junit.After;
 import org.junit.Before;
-import page.object.scooter.Scooter;
+import pageobject.scooter.Scooter;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -47,13 +47,13 @@ public class ParamScooterTest {
     }
 
     @Before
-    public void setup(){
+    public void setup() {
         driver = new ChromeDriver();
         driver.get(URL);
     }
 
     @Test
-    public void ScooterTestInHeaderPage() {
+    public void scooterTestInHeaderPage() {
         Scooter scooter = new Scooter(driver);
         scooter.clickButtonCookie();
         scooter.clickHeaderButtonScooter();
@@ -64,7 +64,7 @@ public class ParamScooterTest {
     }
 
     @Test
-    public void ScooterTestInHomePage() {
+    public void scooterTestInHomePage() {
         Scooter scooter = new Scooter(driver);
         scooter.clickButtonCookie();
         scooter.scrollAndClickToButtonScooter();

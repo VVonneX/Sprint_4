@@ -1,4 +1,4 @@
-package page.object.scooter;
+package pageobject.scooter;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

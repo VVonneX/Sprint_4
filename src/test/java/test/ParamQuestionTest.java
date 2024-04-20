@@ -3,7 +3,7 @@ package test;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
-import page.object.question.ImportantQuestion;
+import pageobject.question.ImportantQuestion;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -44,8 +44,7 @@ public class ParamQuestionTest {
     }
 
     @Test
-    public void TestQuestion(){
-
+    public void testQuestion(){
         ImportantQuestion importantQuestion = new ImportantQuestion(driver);
         importantQuestion.clickButtonCookie();
         importantQuestion.scrollAndWaitToQuestion(index);

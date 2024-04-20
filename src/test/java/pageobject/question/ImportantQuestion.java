@@ -1,4 +1,4 @@
-package page.object.question;
+package pageobject.question;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -12,7 +12,7 @@ public class ImportantQuestion {
     private final WebDriver driver;
 
     //кнопка cookie
-    private By ButtonCookieLocator = By.id("rcc-confirm-button");
+    private By buttonCookieLocator = By.id("rcc-confirm-button");
 
     //поле с вопросами в списке "Вопросы о важном"
     private final String questionLocator = "accordion__heading-%s";
@@ -25,7 +25,7 @@ public class ImportantQuestion {
     }
 
     public void clickButtonCookie() {
-        driver.findElement(ButtonCookieLocator).click();
+        driver.findElement(buttonCookieLocator).click();
     }
 
     public void scrollAndWaitToQuestion(int index) {
